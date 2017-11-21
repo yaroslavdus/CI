@@ -24,6 +24,8 @@ public class VerifyTitle {
 	public void test_01() {
 		
 		driver.get("http://learn-automation.com");
+		String title = driver.getTitle();
+		System.out.println("Title: " + title);
 		Assert.assertTrue(driver.getTitle().contains("Selenium"));
 		
 	}
